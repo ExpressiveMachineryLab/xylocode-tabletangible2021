@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c70b647426211f45b77024d7be59f24, type: 3}
+  m_Name: Yellow6
+  m_EditorClassIdentifier: 
+  bankName: Deep Kick
+  voice: 1
+  fadeTime: 0.15
+  volumes:
+  - 0.5
+  - 0.5
+  - 0.5
+  - 0.5
+  - 0.5
+  clips:
+  - {fileID: 8300000, guid: 28777aa9de9585f459c70af537e524e1, type: 3}
+  - {fileID: 8300000, guid: cf73265372d30e2499eff85526e424be, type: 3}
+  - {fileID: 8300000, guid: 40a33a47a2c0dd04886100f373c493f0, type: 3}
+  - {fileID: 8300000, guid: 89ec1b63ebb4621458ec38ef0b64142b, type: 3}
+  - {fileID: 8300000, guid: 708810c9f50396e4d99de42297b6419a, type: 3}

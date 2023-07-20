@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Xylocode</title>
+		<link rel="stylesheet" href="TemplateData/style.css">
+		<script src="TemplateData/UnityProgress.js"></script>
+		<script src="Build/UnityLoader.js"></script>
+		<script>
+			var unityInstance = UnityLoader.instantiate("unityContainer", "Build/build.json", {onProgress: UnityProgress});
+		</script>
+	</head>
+	<body>
+		<div class="webgl-content">
+			<div id="unityContainer" style="width: 960px; height: 600px"></div>
+			<div class="footer">
+			</div>
+		</div>
+		<select id="midiDropdown" onclick="SelectMidiDevice()">
+	</body>
+	<script type="text/javascript">
+
+		var midiDevice = null;
+		var midiOutput = [];
+		var currentMidi = [];
+		window.addEventListener('load', function() {   
+			navigator.requestMIDIAccess().then( onMIDIInit, onMIDISystemError );
+		});
+
+		function onMIDIInit( midi ) {
+			midiOutput = Array.from(midi.outputs.values());
+			PopulateDropdown();
+		}
+
+		function onMIDISystemError() {
+			var list = document.getElementById('midiDropdown');
+			list.options[0] = new Option('No MIDI Support', null);
+		}
+
+		function PopulateDropdown() {
+			var list = document.getElementById('midiDropdown');
+			list.options = [];
+
+			list.options[0] = new Option('Select MIDI Device', null);
+			for (var i = 0; i < midiOutput.length; i++) {
+				list.options[i + 1] = new Option(midiOutput[i].name, i);
+			}
+		}
+
+		function SelectMidiDevice() {
+			var list = document.getElementById('midiDropdown');
+			if (list.value == null) {
+				midiDevice = null;
+				return;
+			}
+
+			midiDevice = midiOutput[list.value];
+		}
+
+		var freeToGo = false;
+
+		var freshparams = new URLSearchParams(window.location.search);
+		var pageSIDString = freshparams.get("sid");
+
+		//window.addEventListener('beforeunload', (event) => {
+		//	unityInstance.SendMessage('SL Tool', 'SaveCanvasToSlot', 0);
+
+		//	if (!freeToGo) {
+		//		unityInstance.SendMessage('UnhideReminder', 'Go');
+		//		document.getElementsByClassName("button")[0].style.backgroundColor  = "red";
+		//		event.preventDefault();
+		//		event.returnValue = "You haven't taken the Post Survey, do you still wan't to close the window?";
+		//	}
+		//});
+
+
+		//if (pageSIDString == null) {
+		//	freeToGo = true;
+		//	document.getElementsByClassName("button")[0].style.display = "none";
+		//} else {
+		//	setTimeout(function(){unityInstance.SendMessage('UnhideReminder', 'Go');}, 300000);
+		//}
+
+		//var GoToPostServy = function() {
+		//	freeToGo = true;
+		//	window.open("https://gatech.co1.qualtrics.com/jfe/form/SV_2fOu1xDDEkyNrgh?IDNumber=" + pageSIDString, "_self");
+		//}
+	</script>
+</html>

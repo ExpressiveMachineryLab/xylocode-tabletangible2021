@@ -1,0 +1,162 @@
+{
+  "Config": {
+    "Name": "XyloPROFILE",
+    "SensitivityMultiplier": 1.0,
+    "Recovery": {
+      "Timeout": 200,
+      "TangibleDistance": 50.0,
+      "PointDistance": 50.0
+    },
+    "Smoothing": {
+      "PositionHistory": 1,
+      "RotationHistory": 10
+    },
+    "Pending3PointMatchDelay": 0
+  },
+  "Patterns": [
+    {
+      "PatternId": 0,
+      "Name": "tangible_E",
+      "KeepAlivePoints": 2,
+      "Points": [
+        {
+          "X": 65.6666641,
+          "Y": -95.0
+        },
+        {
+          "X": 27.66667,
+          "Y": 83.0
+        },
+        {
+          "X": -93.3333359,
+          "Y": 12.0
+        }
+      ],
+      "Offset": {
+        "X": 0.0,
+        "Y": 0.0
+      },
+      "Radius": 114.99044
+    },
+    {
+      "PatternId": 1,
+      "Name": "tangible_C",
+      "KeepAlivePoints": 2,
+      "Points": [
+        {
+          "X": 30.0,
+          "Y": -104.666664
+        },
+        {
+          "X": 85.0,
+          "Y": 78.3333359
+        },
+        {
+          "X": -115.0,
+          "Y": 26.33333
+        }
+      ],
+      "Offset": {
+        "X": 0.0,
+        "Y": 0.0
+      },
+      "Radius": 123.989677
+    },
+    {
+      "PatternId": 2,
+      "Name": "tangible_A",
+      "KeepAlivePoints": 2,
+      "Points": [
+        {
+          "X": 17.333334,
+          "Y": -78.0
+        },
+        {
+          "X": 63.3333321,
+          "Y": 60.0
+        },
+        {
+          "X": -80.6666641,
+          "Y": 18.0
+        }
+      ],
+      "Offset": {
+        "X": 0.0,
+        "Y": 0.0
+      },
+      "Radius": 90.0
+    },
+    {
+      "PatternId": 3,
+      "Name": "tangible_I",
+      "KeepAlivePoints": 2,
+      "Points": [
+        {
+          "X": -88.6666641,
+          "Y": -27.33333
+        },
+        {
+          "X": 8.333329,
+          "Y": -88.3333359
+        },
+        {
+          "X": 80.3333359,
+          "Y": 115.666664
+        }
+      ],
+      "Offset": {
+        "X": 0.0,
+        "Y": 0.0
+      },
+      "Radius": 132.829224
+    },
+    {
+      "PatternId": 4,
+      "Name": "tangible_G",
+      "KeepAlivePoints": 2,
+      "Points": [
+        {
+          "X": -12.6666651,
+          "Y": -63.6666679
+        },
+        {
+          "X": 61.3333321,
+          "Y": -24.666666
+        },
+        {
+          "X": -48.6666679,
+          "Y": 88.3333359
+        }
+      ],
+      "Offset": {
+        "X": 0.0,
+        "Y": 0.0
+      },
+      "Radius": 94.61945
+    },
+    {
+      "PatternId": 5,
+      "Name": "tangible_B",
+      "KeepAlivePoints": 2,
+      "Points": [
+        {
+          "X": -76.0,
+          "Y": -68.3333359
+        },
+        {
+          "X": 99.0,
+          "Y": -24.33333
+        },
+        {
+          "X": -23.0,
+          "Y": 92.6666641
+        }
+      ],
+      "Offset": {
+        "X": 0.0,
+        "Y": 0.0
+      },
+      "Radius": 108.268005
+    }
+  ]
+}

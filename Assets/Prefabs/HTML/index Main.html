@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-RHDWEQ2VYB"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-RHDWEQ2VYB');
+		</script>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Xylocode</title>
+		<link rel="stylesheet" href="TemplateData/style.css">
+		<style>
+			.button {
+				width: 100%; 
+				height: 40px; 
+				background-color: blue;
+				color: white;
+				font-size: 16px;
+				border-radius: 8px;
+				text-align: center;
+				margin-top: 20px;
+				transition-duration: 0.4s;
+			}
+			.button:hover {
+				background-color: darkblue;
+				font-size: 18px;
+			}
+		</style>
+		<script src="TemplateData/UnityProgress.js"></script>
+		<script src="Build/UnityLoader.js"></script>
+		<script>
+			var unityInstance = UnityLoader.instantiate("unityContainer", "Build/build.json", {onProgress: UnityProgress});
+		</script>
+	</head>
+	<body>
+		<div class="webgl-content">
+			<div id="unityContainer" style="width: 960px; height: 600px"></div>
+			<div class="footer">
+				<div class="button" onclick="GoToPostServy()">Click here to take the Post Survey when you are done</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+
+		//var midiDevices = true;
+		//var midiOutputs = [];
+		//window.addEventListener('load', function() {   
+		//	navigator.requestMIDIAccess().then( 
+		//		onMIDIInit, 
+		//		onMIDISystemError );
+		//});
+
+		//function onMIDIInit( midi ) {
+		//	midiOutputs = Array.from(midi.outputs.values());
+		//}
+
+		//function onMIDISystemError() {
+		//	midiDevices = false;
+		//}
+
+		var freeToGo = false;
+
+		var freshparams = new URLSearchParams(window.location.search);
+		var pageSIDString = freshparams.get("sid");
+
+		window.addEventListener('beforeunload', (event) => {
+			unityInstance.SendMessage('SL Tool', 'SaveCanvasToSlot', 0);
+
+			if (!freeToGo) {
+				unityInstance.SendMessage('UnhideReminder', 'Go');
+				document.getElementsByClassName("button")[0].style.backgroundColor  = "red";
+				event.preventDefault();
+				event.returnValue = "You haven't taken the Post Survey, do you still wan't to close the window?";
+			}
+		});
+
+
+		if (pageSIDString == null) {
+			freeToGo = true;
+			document.getElementsByClassName("button")[0].style.display = "none";
+		} else {
+			setTimeout(function(){unityInstance.SendMessage('UnhideReminder', 'Go');}, 300000);
+		}
+
+		var GoToPostServy = function() {
+			freeToGo = true;
+			window.open("https://gatech.co1.qualtrics.com/jfe/form/SV_2fOu1xDDEkyNrgh?IDNumber=" + pageSIDString, "_self");
+		}
+	</script>
+</html>

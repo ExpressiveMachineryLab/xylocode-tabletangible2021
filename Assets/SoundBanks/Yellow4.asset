@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c70b647426211f45b77024d7be59f24, type: 3}
+  m_Name: Yellow4
+  m_EditorClassIdentifier: 
+  bankName: Bass E
+  voice: 1
+  fadeTime: 0.15
+  volumes:
+  - 0.5
+  - 0.5
+  - 0.5
+  - 0.5
+  - 0.5
+  clips:
+  - {fileID: 8300000, guid: 731f619c6ae563648958e5037666ea59, type: 3}
+  - {fileID: 8300000, guid: d5492f3a365dd1d43b0ab459f4268071, type: 3}
+  - {fileID: 8300000, guid: ed6013af722cf554fac9c934e739aa46, type: 3}
+  - {fileID: 8300000, guid: 213b19850674bef4f8b9609f83f795f6, type: 3}
+  - {fileID: 8300000, guid: 2d8dc03ff060ba0469c9a6a994717567, type: 3}

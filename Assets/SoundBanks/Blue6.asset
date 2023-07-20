@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c70b647426211f45b77024d7be59f24, type: 3}
+  m_Name: Blue6
+  m_EditorClassIdentifier: 
+  bankName: Trance Kick
+  voice: 1
+  fadeTime: 0.15
+  volumes:
+  - 0.5
+  - 0.5
+  - 0.5
+  - 0.5
+  - 0.5
+  clips:
+  - {fileID: 8300000, guid: f886b0289ccb2e94bae5acabcabdfb54, type: 3}
+  - {fileID: 8300000, guid: 4e6c0ff176f35a348930cdfab33699a0, type: 3}
+  - {fileID: 8300000, guid: 0619dead0b39c614e8eb66b326231c7b, type: 3}
+  - {fileID: 8300000, guid: 34acf4e8f2eeae14f9f9383e55a625ac, type: 3}
+  - {fileID: 8300000, guid: f3e81b679eb02c74982be55be5eb749d, type: 3}

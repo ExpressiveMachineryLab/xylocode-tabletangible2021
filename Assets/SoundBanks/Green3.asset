@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c70b647426211f45b77024d7be59f24, type: 3}
+  m_Name: Green3
+  m_EditorClassIdentifier: 
+  bankName: Vital Bass
+  voice: 1
+  fadeTime: 0.15
+  volumes:
+  - 0.3
+  - 0.3
+  - 0.3
+  - 0.3
+  - 0.3
+  clips:
+  - {fileID: 8300000, guid: bc97ddeeb55a08c46a2ef715e3de7600, type: 3}
+  - {fileID: 8300000, guid: af96fb3b10cd3674692c14fba4c8c016, type: 3}
+  - {fileID: 8300000, guid: fe5ac6b43d314ab47934958012851269, type: 3}
+  - {fileID: 8300000, guid: d526d7898c994e341b7fa4248c07da2d, type: 3}
+  - {fileID: 8300000, guid: 72561d09f8f07d8489f7d928a286e503, type: 3}

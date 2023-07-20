@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7dd7af910565e45ae2f3f95173aafd, type: 3}
+  m_Name: style5
+  m_EditorClassIdentifier: 
+  styleName: Violin
+  redBank: {fileID: 11400000, guid: 018d0b57171014446a6dfd685264b200, type: 2}
+  yellowBank: {fileID: 11400000, guid: 2cc749a9c8a01904dab32988bd02cd8a, type: 2}
+  blueBank: {fileID: 11400000, guid: ea67d15e67b8b0542a297446ecfdde27, type: 2}
+  greenBank: {fileID: 11400000, guid: 924a9a0623289ff4db74446ea7bdd7af, type: 2}

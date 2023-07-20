@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c70b647426211f45b77024d7be59f24, type: 3}
+  m_Name: Blue5
+  m_EditorClassIdentifier: 
+  bankName: Violin II
+  voice: 1
+  fadeTime: 0.15
+  volumes:
+  - 0.5
+  - 0.5
+  - 0.5
+  - 0.5
+  - 0.5
+  clips:
+  - {fileID: 8300000, guid: 6f2c3678b434be14c99931bdb617ebfb, type: 3}
+  - {fileID: 8300000, guid: 648b0ac975e542b45ad7452ffbbdfdfa, type: 3}
+  - {fileID: 8300000, guid: 39ce224807e76ce4384d1a25972ea867, type: 3}
+  - {fileID: 8300000, guid: 0c3760ab7d272b14eb4834047667b35a, type: 3}
+  - {fileID: 8300000, guid: a8590bd9e02902b48a68060d833ada99, type: 3}

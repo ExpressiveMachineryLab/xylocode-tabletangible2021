@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c70b647426211f45b77024d7be59f24, type: 3}
+  m_Name: Green4
+  m_EditorClassIdentifier: 
+  bankName: Electric Es
+  voice: 0
+  fadeTime: 0.15
+  volumes:
+  - 0.5
+  - 0.5
+  - 0.5
+  - 0.5
+  - 0.5
+  clips:
+  - {fileID: 8300000, guid: 638ab0207ad731448bd88159b212693d, type: 3}
+  - {fileID: 8300000, guid: 7a110bf65d7757243a000fed64c5583c, type: 3}
+  - {fileID: 8300000, guid: f6b12cb0c10888049a12702af05fe6dd, type: 3}
+  - {fileID: 8300000, guid: 223d70e6edeb5b743819e5df433b9f4d, type: 3}
+  - {fileID: 8300000, guid: c54d398a59b3def4aaa50e0cae849209, type: 3}

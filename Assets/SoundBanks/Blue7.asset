@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c70b647426211f45b77024d7be59f24, type: 3}
+  m_Name: Blue7
+  m_EditorClassIdentifier: 
+  bankName: Sax Chords
+  voice: 1
+  fadeTime: 0.15
+  volumes:
+  - 0.5
+  - 0.5
+  - 0.5
+  - 0.5
+  - 0.5
+  clips:
+  - {fileID: 8300000, guid: 2b1340a0f30ea204187c6644f9ca4138, type: 3}
+  - {fileID: 8300000, guid: 24a4c0579d787ca4caed7e5a7129667a, type: 3}
+  - {fileID: 8300000, guid: 71b0b4a02cf174c41b91f4f5b7ef62be, type: 3}
+  - {fileID: 8300000, guid: 41b332952d95df8468ab3e597d377143, type: 3}
+  - {fileID: 8300000, guid: bd180013985579249b0476f39e755c95, type: 3}

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1168a5ca02c2e5b45893c43ff79c26a1, type: 3}
+  m_Name: Midi3
+  m_EditorClassIdentifier: 
+  bankName: New Sound Bank
+  voice: 0
+  fadeTime: 0.25
+  volumes:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  clips:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  midiNotes: 4d0000004f000000510000005300000054000000
+  midiChannel: 0

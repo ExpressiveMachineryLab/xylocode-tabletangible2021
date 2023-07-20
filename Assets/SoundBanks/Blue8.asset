@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c70b647426211f45b77024d7be59f24, type: 3}
+  m_Name: Blue8
+  m_EditorClassIdentifier: 
+  bankName: Tenor Sax
+  voice: 1
+  fadeTime: 0.15
+  volumes:
+  - 0.5
+  - 0.5
+  - 0.5
+  - 0.5
+  - 0.5
+  clips:
+  - {fileID: 8300000, guid: 6fc7b16e68dab6b449058a01e397f0e8, type: 3}
+  - {fileID: 8300000, guid: ba16a1c8c69ef2240956c587b6080de3, type: 3}
+  - {fileID: 8300000, guid: c6a39b02489484f4e933967f5d720c09, type: 3}
+  - {fileID: 8300000, guid: 3f29021eca1e9744da5438359d37760b, type: 3}
+  - {fileID: 8300000, guid: fc3dfcaf1e75a354cb2e1f2c98a64b4d, type: 3}

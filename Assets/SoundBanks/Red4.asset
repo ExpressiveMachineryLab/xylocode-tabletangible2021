@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c70b647426211f45b77024d7be59f24, type: 3}
+  m_Name: Red4
+  m_EditorClassIdentifier: 
+  bankName: Bass C
+  voice: 1
+  fadeTime: 0.15
+  volumes:
+  - 0.5
+  - 0.5
+  - 0.5
+  - 0.5
+  - 0.5
+  clips:
+  - {fileID: 8300000, guid: b3594494d69435d4faa42c11f41780b2, type: 3}
+  - {fileID: 8300000, guid: 97dbeafadd387e34fa24bdcfb8d1d87d, type: 3}
+  - {fileID: 8300000, guid: 3e530663f4c90f94382e553115b5f6e9, type: 3}
+  - {fileID: 8300000, guid: 8e6f662889f32334a88a8ed7e6138d50, type: 3}
+  - {fileID: 8300000, guid: 926bd96f75f730b468f05e8ce42c634a, type: 3}

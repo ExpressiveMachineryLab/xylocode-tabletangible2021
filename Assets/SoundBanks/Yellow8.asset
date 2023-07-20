@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c70b647426211f45b77024d7be59f24, type: 3}
+  m_Name: Yellow8
+  m_EditorClassIdentifier: 
+  bankName: Alto Sax
+  voice: 1
+  fadeTime: 0.15
+  volumes:
+  - 0.5
+  - 0.5
+  - 0.5
+  - 0.5
+  - 0.5
+  clips:
+  - {fileID: 8300000, guid: d8b3a3746eccce24789106a734560aa2, type: 3}
+  - {fileID: 8300000, guid: 6acc553c962554e47b374a7780fb9e16, type: 3}
+  - {fileID: 8300000, guid: 5bbac161ac52e8947834dcfe16a523b2, type: 3}
+  - {fileID: 8300000, guid: bbbd7547759badb419dc26117d46478a, type: 3}
+  - {fileID: 8300000, guid: 8129170f000e27e419f9bf8d567a55f9, type: 3}

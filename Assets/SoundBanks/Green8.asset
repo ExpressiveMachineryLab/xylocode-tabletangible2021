@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c70b647426211f45b77024d7be59f24, type: 3}
+  m_Name: Green8
+  m_EditorClassIdentifier: 
+  bankName: Baritone Sax
+  voice: 1
+  fadeTime: 0.15
+  volumes:
+  - 0.5
+  - 0.5
+  - 0.5
+  - 0.5
+  - 0.5
+  clips:
+  - {fileID: 8300000, guid: a0926be50f786624496e8c3f35afd727, type: 3}
+  - {fileID: 8300000, guid: d6503f9c315678c47a704cc2f19668ed, type: 3}
+  - {fileID: 8300000, guid: 53d81ae125cedb641954910a6de63afb, type: 3}
+  - {fileID: 8300000, guid: ddd61204f770a9b49991424e51d6c301, type: 3}
+  - {fileID: 8300000, guid: 564333c0893464b4fa0a67abc7d635cb, type: 3}
